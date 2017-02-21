@@ -24,7 +24,7 @@ inherits(Parser, EE)
 Parser.prototype._resetState = function () {
   this.packet = new Packet()
   this.error = null
-  this._list = bl()
+  this._list = new bl()
   this._stateCounter = 0
 }
 
